@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R54R801XXWL",
+    "m_SelectedDeviceId": "R54R3020ESA",
     "m_SelectedPackage": {
-        "deviceId": "R54R801XXWL",
+        "deviceId": "R54R3020ESA",
         "name": "com.DefaultCompany.team5",
-        "processId": 30485,
+        "processId": 22060,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -54,6 +54,48 @@
             "deviceId": "R54R801XXWL",
             "name": "com.DefaultCompany.team5",
             "processId": 30485,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.DefaultCompany.team5",
+            "processId": 13437,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.DefaultCompany.team5",
+            "processId": 14807,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.DefaultCompany.team5",
+            "processId": 15928,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.DefaultCompany.team5",
+            "processId": 20083,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.DefaultCompany.team5",
+            "processId": 20988,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.DefaultCompany.team5",
+            "processId": 21757,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.DefaultCompany.team5",
+            "processId": 22060,
             "exited": false
         }
     ],
