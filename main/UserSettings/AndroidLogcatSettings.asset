@@ -2,8 +2,8 @@
     "m_SelectedDeviceId": "R54R3020ESA",
     "m_SelectedPackage": {
         "deviceId": "R54R3020ESA",
-        "name": "com.DefaultCompany.team5",
-        "processId": 22060,
+        "name": "com.manomotion.TESTHANDTRACKING",
+        "processId": 6986,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -96,6 +96,24 @@
             "deviceId": "R54R3020ESA",
             "name": "com.DefaultCompany.team5",
             "processId": 22060,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 26701,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 6633,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R3020ESA",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 6986,
             "exited": false
         }
     ],
