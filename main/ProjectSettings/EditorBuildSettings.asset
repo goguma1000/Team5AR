@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CapsuleScene.unity
     guid: 6f719603182f89a4ab865d1fca4754fc
+  - enabled: 1
+    path: Assets/Scenes/WashingScene.unity
+    guid: b4cf4bd8427414c48bb007bc8ba4beb7
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 014f3e52bf0357042a9f6642f5e63868, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 467b50f7b640ee44fb0dfec30a7feae6, type: 2}
