@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R54R3020ESA",
+    "m_SelectedDeviceId": "R3CR20RZ69E",
     "m_SelectedPackage": {
-        "deviceId": "R54R3020ESA",
+        "deviceId": "R3CR20RZ69E",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 6986,
+        "processId": 3951,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -114,6 +114,132 @@
             "deviceId": "R54R3020ESA",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 6986,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 7712,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 9241,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 10315,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 12136,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 13758,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 15066,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 16069,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 18423,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 19158,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 20280,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 20953,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 22537,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 23213,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 25933,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 28295,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 29419,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 31120,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 31948,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 1820,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 2852,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 3951,
             "exited": false
         }
     ],
