@@ -357,13 +357,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodSprites:
-  - {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
-  - {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
-  - {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
-  - {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
-  - {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
-  - {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
-  - {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   foodImage: {fileID: 431362974859754499}
   foodScore: {fileID: 431362976309764386}
   clearWindow: {fileID: 7969298977732513570}
@@ -383,13 +383,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food:
-  - {fileID: 1829371231341652, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
-  - {fileID: 1369001872449898, guid: 2f2e54b9f3898eb46a0b47f9a4d4c52b, type: 3}
-  - {fileID: 1407451490957870, guid: 3ce32ffa6ccf60e4ab65d9e396f43433, type: 3}
-  - {fileID: 1802840387486672, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
-  - {fileID: 1638444836145330, guid: 031f4f4b1f7d8b7489da0919e18ceac3, type: 3}
-  - {fileID: 1541859410316496, guid: 4fe5a7bcbee1651418ea031a87ff53e4, type: 3}
-  - {fileID: 1329430274803916, guid: 8c8c7d8f829a2d24ebe78eddb5eaff57, type: 3}
+  - {fileID: 2016907860318952390, guid: 17a2c29204ec03c47ac074aa74fc7cdc, type: 3}
+  - {fileID: 7669396409293160120, guid: 543d42f29a4050b41b692e1bbc5d90ae, type: 3}
+  - {fileID: 3548350038661185006, guid: b617608f879447d468d57594642a19cc, type: 3}
+  - {fileID: 8194219251473230623, guid: 73680f5988069c24ebefd6ee1219eeea, type: 3}
+  - {fileID: 5413277375700757029, guid: 7e776dc772778e3418fbbe7fc320a66c, type: 3}
+  - {fileID: 6459798942854055818, guid: 8fb2658d1702bac41bcd92004bed607d, type: 3}
+  - {fileID: 6005319897915137463, guid: 2d1c001fc096ea9468f149a91a26a3c5, type: 3}
 --- !u!1 &5699733210945132769
 GameObject:
   m_ObjectHideFlags: 0
