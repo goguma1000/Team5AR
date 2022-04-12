@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R3CR20RZ69E",
+    "m_SelectedDeviceId": "RFCT20MSRWN",
     "m_SelectedPackage": {
-        "deviceId": "R3CR20RZ69E",
+        "deviceId": "RFCT20MSRWN",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 3951,
+        "processId": 5591,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -240,6 +240,36 @@
             "deviceId": "R3CR20RZ69E",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 3951,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 32225,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 2168,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 3253,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 4588,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 5591,
             "exited": false
         }
     ],
