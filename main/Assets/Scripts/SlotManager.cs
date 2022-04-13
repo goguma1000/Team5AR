@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class SlotManager : MonoBehaviour
 {
-    private bool isSpawn = false;
     private int slotnum;
     [SerializeField]
     private TextMeshProUGUI[] numtext;
@@ -24,10 +23,9 @@ public class SlotManager : MonoBehaviour
     }
     public void instantiatePrefab(GameObject prefab)
     {
-        if (GameManager.Instance.isFoodSpawn == false && GameManager.Instance.foodStock[slotnum] != 0)
+        if (GameManager.Instance.isFoodSpawn == false && GameManager.Instance.foodStock[slotnum] != 0 && GameManager.Instance.Fullness < 100)
         {
-            GameObject spawned = Instantiate(prefab, new Vector3(0, 0, 0.5f), Quaternion.identity);
-            spawned.transform.localScale = new Vector3(5f, 5f, 5f);
+            GameObject spawned = Instantiate(prefab, Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Camera.main.nearClipPlane + 0.5f)), Quaternion.identity);
             spawned.name = prefab.name;
             spawned.tag = "Food";
             GameManager.Instance.isFoodSpawn = true;
@@ -42,6 +40,18 @@ public class SlotManager : MonoBehaviour
         else if(GameManager.Instance.foodStock[slotnum] == 0)
         {
             Debug.Log("the food empty");
+        }
+        else if(GameManager.Instance.Fullness >= 100)
+        {
+            Debug.Log("I'm full");
+        }
+
+    }
+    public void InitslotText()
+    {
+        for (int i = 0; i < GameManager.Instance.foodStock.Length; i++)
+        {
+            numtext[i].text = "" + GameManager.Instance.foodStock[i];
         }
     }
 }
