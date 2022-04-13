@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R3CR20RZ69E",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 17951,
+        "processId": 21560,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -276,6 +276,12 @@
             "deviceId": "R3CR20RZ69E",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 17951,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR20RZ69E",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 21560,
             "exited": false
         },
         {
