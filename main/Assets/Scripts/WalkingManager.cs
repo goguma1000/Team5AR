@@ -6,22 +6,27 @@ using UnityEngine.XR.ARFoundation;
 
 public class WalkingManager : MonoBehaviour
 {
+    // Food num pet got
     public static int food = 0;
+    // What food get
     public static int ranFood = 0;
 
+    // Food Sprites for UI
     public Sprite[] foodSprites;
     public Image foodImage;
     public TMPro.TMP_Text foodScore;
 
+    // End Walking UI
     [SerializeField]
     private GameObject clearWindow;
 
-
+    // Create Food and plane
     private CreateFood createFood;
     [SerializeField]
     private GameObject planePrefab;
     private GameObject plane;
 
+    // Turn on or off UI and Component
     [SerializeField]
     private GameObject InteractionUI;
     [SerializeField]
@@ -108,6 +113,7 @@ public class WalkingManager : MonoBehaviour
         transform.gameObject.SetActive(false);
     }
 
+    // Select Food what is get Randomly
     private int RandomFood()
     {
         int choose = Random.Range(0, normalProbConst + specialProbConst);

@@ -12,11 +12,13 @@ public class LoadingManager : MonoBehaviour
 
     private string nextScene;
 
+    // Keeping Loading UI
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
     }
 
+    // Load Scene
     public void LoadScene(string sceneName)
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -25,6 +27,7 @@ public class LoadingManager : MonoBehaviour
         StartCoroutine(LoadScene());
     }
 
+    // Load Event
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
         if(arg0.name == nextScene)
@@ -33,6 +36,7 @@ public class LoadingManager : MonoBehaviour
         }
     }
 
+    // Load Scene Asynchronous
     IEnumerator LoadScene()
     {
         yield return null;
@@ -67,6 +71,7 @@ public class LoadingManager : MonoBehaviour
         }
     }
 
+    // Loading UI turn off manually
     IEnumerator loadingEnd(AsyncOperation op)
     {
         yield return new WaitForSecondsRealtime(2f);
@@ -76,6 +81,8 @@ public class LoadingManager : MonoBehaviour
         Destroy(gameObject);
     }
 
+
+    // Loading UI : Spin Wheel
     IEnumerator spinWheelRoutine()
     {
         while (true)

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CreateFood : MonoBehaviour
 {
+    // Script for Walking
+
     public GameObject[] food;
     private GameObject pet;
 
@@ -17,6 +19,7 @@ public class CreateFood : MonoBehaviour
         StartCoroutine("createFood");
     }
 
+    // Create food for walking
     IEnumerator createFood()
     {
         while (true)
@@ -38,12 +41,14 @@ public class CreateFood : MonoBehaviour
         }
     }
 
+    // when walking is end, stop create food coroutine
     public void walkingEnd()
     {
         StopCoroutine("createFood");
         destroyFood();
     }
 
+    // When walking is end, destroy all food object.
     private void destroyFood()
     {
         foreach(GameObject go in foodList)

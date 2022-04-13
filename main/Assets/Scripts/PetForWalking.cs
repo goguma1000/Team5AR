@@ -17,6 +17,7 @@ public class PetForWalking : MonoBehaviour
 
     private void OnDisable()
     {
+        // When walking is end, Animation turn Off
         animator.SetInteger("animation", 1);
         isMove = false;
     }
@@ -30,9 +31,11 @@ public class PetForWalking : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, movePosition, Time.deltaTime * speed);
             transform.LookAt(movePosition);
 
+            // Walking Animation
             animator.SetInteger("animation", 21);
             if (transform.position == movePosition)
             {
+                // Idle Animation
                 animator.SetInteger("animation", 1);
                 isMove = false;
             }
@@ -47,6 +50,7 @@ public class PetForWalking : MonoBehaviour
         isMove = true;
     }
 
+    // collide with Food
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Food")
