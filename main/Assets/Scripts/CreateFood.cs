@@ -7,6 +7,7 @@ public class CreateFood : MonoBehaviour
     // Script for Walking
 
     public GameObject[] food;
+
     private GameObject pet;
 
 

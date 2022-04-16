@@ -10,8 +10,11 @@ public class GameManager : MonoBehaviour
     public int Fullness = 50;
     public int[] foodStock = { 5, 0, 0, 0, 0, 0, 0 }; // 먹이 인벤토리 순서대로
     public int[] petStomach = { 0, 0, 0, 0, 0, 0, 0 };
+    public int petNum = 0;
     public bool isFoodSpawn = false;
-    public string petName = "Test Name";
+
+    [HideInInspector]
+    public string petName = null;
    
     void Awake()
     {

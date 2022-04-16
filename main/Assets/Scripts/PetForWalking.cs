@@ -55,6 +55,7 @@ public class PetForWalking : MonoBehaviour
     {
         if(other.gameObject.tag == "Food")
         {
+            GetComponent<AudioSource>().Play();
             other.gameObject.SetActive(false);
             WalkingManager.food++;
         }

@@ -11,12 +11,12 @@ public class PetLookAtCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectWithTag("Player"))
+        if (GameObject.FindGameObjectWithTag("Player") != null)
         {
             pet = GameObject.FindGameObjectWithTag("Player");
+            camera = Camera.main;
+            targetPosition = new Vector3(camera.transform.position.x, pet.transform.position.y, camera.transform.position.z);
+            pet.transform.LookAt(targetPosition);
         }
-        camera = Camera.main;
-        targetPosition = new Vector3(camera.transform.position.x, pet.transform.position.y, camera.transform.position.z);
-        pet.transform.LookAt(targetPosition);
     }
 }
