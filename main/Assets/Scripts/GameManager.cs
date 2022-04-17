@@ -31,7 +31,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(decreaseStat());
+        StartCoroutine(decreaseLove());
     }
 
     // Update is called once per frame
@@ -39,7 +40,37 @@ public class GameManager : MonoBehaviour
     {
         
     }
+    IEnumerator decreaseStat()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(180);
+            if (Cleanliness - 5 < 0)
+            {
+                Cleanliness = 0;
+            }
+            else Cleanliness -= 5;
 
-   
+            if (Fullness - 5 < 0)
+            {
+                Fullness = 0;
+            }
+            else Fullness -= 5;
+        }
+    }
+    IEnumerator decreaseLove()
+    {
+        while (true)
+        {
+            if ((Cleanliness <= 20 || Fullness <= 20) && Love > 0)
+            {
+                yield return new WaitForSeconds(1);
+                if (Love - 5 < 0) Love = 0;
+                else Love -= 5;
+            }
+            else yield return null;
+        }
+
+    }
 }
 

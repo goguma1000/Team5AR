@@ -10,10 +10,13 @@ public class SlotManager : MonoBehaviour
     private int slotnum;
     [SerializeField]
     private TextMeshProUGUI[] numtext;
-    // Start is called before the first frame update
+    Notice_UI notice;
+    [SerializeField]
+    private GameObject interactionBar, foodInventory;
+
     void Start()
     {
-        
+        notice = FindObjectOfType<Notice_UI>();
     }
     // Update is called once per frame
 
@@ -35,15 +38,19 @@ public class SlotManager : MonoBehaviour
         }
         else if(GameManager.Instance.isFoodSpawn == true)
         {
-            Debug.Log("Food already exist");
+            notice.SUB("Other food is spawned already.");
         }
         else if(GameManager.Instance.foodStock[slotnum] == 0)
         {
-            Debug.Log("the food empty");
+            notice.SUB("You don't have this food.");
+            foodInventory.SetActive(false);
+            interactionBar.SetActive(true);
         }
         else if(GameManager.Instance.Fullness >= 100)
         {
-            Debug.Log("I'm full");
+            notice.SUB("The Pet is full ");
+            foodInventory.SetActive(false);
+            interactionBar.SetActive(true);
         }
 
     }

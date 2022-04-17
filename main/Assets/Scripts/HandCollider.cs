@@ -30,7 +30,7 @@ public class HandCollider : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
-        gameObject.tag = "Food";
+        gameObject.tag = "Item";
         defaultsize = transform.localScale;
     }
 

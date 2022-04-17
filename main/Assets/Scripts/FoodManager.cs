@@ -6,13 +6,16 @@ using UnityEngine;
 public class FoodManager : MonoBehaviour
 {
     private GameObject target;
-    private int foodIndex;
+    private int foodIndex, hitcount = 0;
     private float distance;
-    [SerializeField]
-    private AnimationClip clip;
+    private AudioSource audio;
     private GestureInfo gesture;
     private HandInfo currentlyDetectedHand;
 
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         currentlyDetectedHand = ManomotionManager.Instance.Hand_infos[0].hand_info;
@@ -31,6 +34,11 @@ public class FoodManager : MonoBehaviour
                 {
                     if (hit.collider.gameObject.CompareTag("Player"))
                     {
+                        if(hitcount == 0)
+                        {
+                            audio.Play();
+                            hitcount++;
+                        }
                         StartCoroutine("eat");
                     }
                 }
@@ -40,7 +48,7 @@ public class FoodManager : MonoBehaviour
     IEnumerator eat()
     {   
         target.gameObject.GetComponent<Animator>().SetInteger("animation",5);
-        yield return new WaitForSeconds(clip.length);
+        yield return new WaitForSeconds(audio.clip.length);
         GameManager.Instance.isFoodSpawn = false;
         swithchNameToIndex(this.name);
 
