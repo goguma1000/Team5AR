@@ -6,13 +6,12 @@ public class GreetingManager : MonoBehaviour
 {
     private GameObject pet;
     private Animator animator;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    private int swipeCount = 0;
+    
+    [SerializeField]
+    private GameObject interactionUI;
+    [SerializeField]
+    private GameObject greeting;
     // Update is called once per frame
     void Update()
     {
@@ -20,23 +19,37 @@ public class GreetingManager : MonoBehaviour
         animator = pet.GetComponent<Animator>();
         UseTriggerGesture();
     }
+    private void OnEnable()
+    {
+        interactionUI.SetActive(false);
+    }
     private void UseTriggerGesture()
     {
         HandInfo detectedHand = ManomotionManager.Instance.Hand_infos[0].hand_info;
 
         if (detectedHand.gesture_info.mano_gesture_trigger == ManoGestureTrigger.SWIPE_LEFT || detectedHand.gesture_info.mano_gesture_trigger == ManoGestureTrigger.SWIPE_RIGHT)
         {
-
-            StartCoroutine("ChangeAnimation");
+            swipeCount++;
         }
-        //animator.SetInteger("animation", 1);
+        //If player swipe hands LEFT or RIGHT 3 times, Greeting is over!
+        if(swipeCount == 3)
+        {
+            GameManager.Instance.Love += 5;
+            GameManager.Instance.Cleanliness -= 10;
+            GameManager.Instance.Fullness -= 10;
+            StartCoroutine("ChangeAnimation");
+            GreetingOver();
+        }
+    }
+
+    private void GreetingOver()
+    {
+        interactionUI.SetActive(true);
+        greeting.GetComponent<GreetingManager>().enabled = false;
     }
 
     IEnumerator ChangeAnimation()
     {
-        GameManager.Instance.Love += 5;
-        GameManager.Instance.Cleanliness -= 10;
-        GameManager.Instance.Fullness -= 10;
         for (float ft = 1f; ft >= 0; ft -= 0.1f)
         {
             animator.SetInteger("animation", 3);

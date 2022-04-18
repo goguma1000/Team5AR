@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class TapToPlacePet : MonoBehaviour
@@ -45,7 +46,10 @@ public class TapToPlacePet : MonoBehaviour
         // check input
         if (TryGetTouchPosition(out touchPosition))
         {
-            raycastAndCreateAndUpdate();
+            if (!isOverUI(touchPosition))
+            {
+                raycastAndCreateAndUpdate();
+            }
         }
     }
 
@@ -70,8 +74,24 @@ public class TapToPlacePet : MonoBehaviour
                 // update position
                 spawnedObject.transform.position = hitPose.position;
             }
-
-
         }
+    }
+    private bool isOverUI(Vector2 position)
+    {
+        // if the pointer is over a gameobject, it is not over a UI element.
+        if (EventSystem.current.IsPointerOverGameObject())
+            return false;
+        // Check if "position" over one or more UI elements.
+        // EventData contains information about mouse/touch events.
+        // EventSystem.current is the active event system that is handling all UI events.
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = new Vector2(position.x, position.y);
+        // EventSystem's raycast methods do raycasts against UI elements (they don't have colliders
+        // so we cannot use Physics.Raycast()).
+        // RaycastAll() returns all hit information of UI elements that were hit.
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        // if hit count > 0 then we hit some UI elements
+        return results.Count > 0;
     }
 }

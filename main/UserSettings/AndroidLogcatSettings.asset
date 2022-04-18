@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R3CR20RZ69E",
+    "m_SelectedDeviceId": "LMV500Nf81f1177",
     "m_SelectedPackage": {
-        "deviceId": "R3CR20RZ69E",
+        "deviceId": "LMV500Nf81f1177",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 4615,
+        "processId": 30820,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -298,30 +298,6 @@
         },
         {
             "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 7087,
-            "exited": true
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 16253,
-            "exited": true
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 18290,
-            "exited": true
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 19222,
-            "exited": true
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
             "name": "com.lge.launcher3",
             "processId": 3173,
             "exited": false
@@ -329,37 +305,43 @@
         {
             "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 19990,
+            "processId": 22070,
             "exited": true
         },
         {
             "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 20551,
-            "exited": false
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 22070,
-            "exited": false
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 26621,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 27308,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 28174,
+            "exited": true
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 24516,
+            "exited": true
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKINGARCompanion",
+            "processId": 29281,
+            "exited": false
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 30820,
             "exited": false
         }
     ],
