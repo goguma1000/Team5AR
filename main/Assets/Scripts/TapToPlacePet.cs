@@ -13,7 +13,8 @@ public class TapToPlacePet : MonoBehaviour
 
     [SerializeField]
     private GameObject[] objectToInstantiate;
-
+    [SerializeField]
+    private GameObject interactionUI;
     // raycast hits
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
@@ -67,6 +68,7 @@ public class TapToPlacePet : MonoBehaviour
             // instantiate only one time
             if (spawnedObject == null)
             {
+                interactionUI.SetActive(true);
                 spawnedObject = Instantiate(objectToInstantiate[GameManager.Instance.petNum], hitPose.position, Quaternion.Euler(0, 180, 0));
             }
             else
