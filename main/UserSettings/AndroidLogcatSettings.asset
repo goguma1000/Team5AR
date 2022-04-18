@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "LMV500Nf81f1177",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 30820,
+        "processId": 11972,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -342,6 +342,30 @@
             "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 30820,
+            "exited": false
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 5543,
+            "exited": false
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 8035,
+            "exited": false
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 10209,
+            "exited": false
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 11972,
             "exited": false
         }
     ],

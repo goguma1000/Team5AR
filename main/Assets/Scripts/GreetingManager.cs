@@ -12,6 +12,8 @@ public class GreetingManager : MonoBehaviour
     private GameObject interactionUI;
     [SerializeField]
     private GameObject greeting;
+    [SerializeField]
+    private GameObject exitWindow;
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +23,7 @@ public class GreetingManager : MonoBehaviour
     }
     private void OnEnable()
     {
+        exitWindow.SetActive(false);
         interactionUI.SetActive(false);
     }
     private void UseTriggerGesture()
@@ -38,14 +41,14 @@ public class GreetingManager : MonoBehaviour
             GameManager.Instance.Cleanliness -= 10;
             GameManager.Instance.Fullness -= 10;
             StartCoroutine("ChangeAnimation");
+            swipeCount = 0;
             GreetingOver();
         }
     }
 
     private void GreetingOver()
     {
-        interactionUI.SetActive(true);
-        greeting.GetComponent<GreetingManager>().enabled = false;
+        exitWindow.SetActive(true);
     }
 
     IEnumerator ChangeAnimation()
