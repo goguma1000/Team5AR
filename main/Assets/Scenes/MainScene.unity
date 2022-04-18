@@ -613,7 +613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -161.5, y: -197.8}
+  m_AnchoredPosition: {x: -161.9, y: -230}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &166906505
@@ -1376,10 +1376,10 @@ RectTransform:
   m_Father: {fileID: 653752869}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 320, y: -1652.2667}
+  m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &339854731
 MonoBehaviour:
@@ -1777,7 +1777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &653752869
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1798,7 +1798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 19.999998}
   m_SizeDelta: {x: -40, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &653752870
@@ -1985,7 +1985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 5.001, y: 1, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 668.1, y: -146.80002}
+  m_AnchoredPosition: {x: 668.1, y: -172}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664886726
@@ -2855,6 +2855,7 @@ MonoBehaviour:
   - {fileID: 5134826210993687874, guid: 3b7f61482d2d2234080c83d4ee4b757f, type: 3}
   - {fileID: 5277397691661964591, guid: 0cc4e4765a3ded24f96cbd5e1a939ccf, type: 3}
   - {fileID: 338891564275134517, guid: 86366a6b4d89e004096bd3b2033850cd, type: 3}
+  interactionUI: {fileID: 653752868}
 --- !u!114 &999161903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3008,10 +3009,10 @@ RectTransform:
   m_Father: {fileID: 653752869}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 560, y: -1652.2667}
+  m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052048396
 MonoBehaviour:
@@ -3141,10 +3142,10 @@ RectTransform:
   m_Father: {fileID: 653752869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: -1652.2667}
+  m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075259020
 MonoBehaviour:
@@ -6034,10 +6035,10 @@ RectTransform:
   m_Father: {fileID: 653752869}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 440, y: -1652.2667}
+  m_SizeDelta: {x: 100, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094573446
 MonoBehaviour:
@@ -6360,6 +6361,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5984913595727327846, guid: ba780329d911cfb47b7b14ced6cd57d2, type: 3}
+      propertyPath: greeting
+      value: 
+      objectReference: {fileID: 468731065}
+    - target: {fileID: 5984913595727327846, guid: ba780329d911cfb47b7b14ced6cd57d2, type: 3}
+      propertyPath: InteractionUI
+      value: 
+      objectReference: {fileID: 653752868}
+    - target: {fileID: 5984913595727327846, guid: ba780329d911cfb47b7b14ced6cd57d2, type: 3}
+      propertyPath: interactionUI
+      value: 
+      objectReference: {fileID: 653752868}
     - target: {fileID: 5984913595727327847, guid: ba780329d911cfb47b7b14ced6cd57d2, type: 3}
       propertyPath: m_RootOrder
       value: 11
