@@ -8,6 +8,8 @@ public class TouchEffect : MonoBehaviour
 
     float spawnTime;
     public float defaultTime = 0.05f;
+
+    Vector2 touchPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,7 @@ public class TouchEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0) && spawnTime >= defaultTime)
+        if (Input.touchCount > 0 && spawnTime >= defaultTime)
         {
             EffectSpawn();
             spawnTime = 0;
@@ -28,8 +30,10 @@ public class TouchEffect : MonoBehaviour
 
     void EffectSpawn()
     {
-        Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        touchPos.z = 2;
-        Instantiate(touchEffect, touchPos, Quaternion.identity);
+        touchPos = Input.GetTouch(0).position;
+        Vector3 pos = new Vector3(touchPos.x, touchPos.y, 1);
+        pos = Camera.main.ScreenToWorldPoint(pos);
+        Debug.Log("À§Ä¡ " + pos);
+        Instantiate(touchEffect, pos, Quaternion.identity);
     }
 }

@@ -7,11 +7,11 @@ public class TouchEffectManager : MonoBehaviour
     Vector2 dir;
     SpriteRenderer sprite;
 
-    public float moveSpeed = 0.1f;
-    public float reduceSpeed = 1;
-    public float transparentSpeed = 5f;
-    public float minSize = 0.1f;
-    public float maxSize = 0.3f;
+    private float moveSpeed = 0.1f;
+    private float reduceSpeed = 1;
+    private float transparentSpeed = 5f;
+    private float minSize = 0.01f;
+    private float maxSize = 0.03f;
 
     [SerializeField]
     public Color[] colors;
@@ -26,12 +26,13 @@ public class TouchEffectManager : MonoBehaviour
 
         float size = Random.Range(minSize, maxSize);
         transform.localScale = new Vector2(size, size);
+        Debug.Log("size" + size);
     }
 
     // Update is called once per frame
     void Update()
     {
-       transform.Translate(dir * moveSpeed);
+       //transform.Translate(dir * moveSpeed);
 
         // Size down to 0
         transform.localScale = Vector2.Lerp(transform.localScale, Vector2.zero, Time.deltaTime * reduceSpeed);
@@ -40,10 +41,10 @@ public class TouchEffectManager : MonoBehaviour
         // Make transparent
         Color color = sprite.color;
         color.a = Mathf.Lerp(sprite.color.a, 0, Time.deltaTime * transparentSpeed);
-        Debug.Log(color);
+        Debug.Log("color" + color.a);
         sprite.color = color;
 
-        if (sprite.color.a <= 0.01f)
-            Destroy(gameObject);
+        //if (sprite.color.a <= 0.01f)
+           // Destroy(gameObject);
     }
 }
