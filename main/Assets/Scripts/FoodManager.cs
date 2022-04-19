@@ -59,7 +59,13 @@ public class FoodManager : MonoBehaviour
             GameManager.Instance.Fullness = 100;
         }
         else GameManager.Instance.Fullness += 20;
-        GameManager.Instance.Cleanliness -= 10;
+        
+        if (GameManager.Instance.Cleanliness - 10 < 0)
+        {
+            GameManager.Instance.Cleanliness = 0;
+        }
+        else GameManager.Instance.Cleanliness -= 10;
+
         if (foodIndex <= 4)
         {
             GameManager.Instance.Love += 5;
