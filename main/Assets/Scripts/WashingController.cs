@@ -7,13 +7,15 @@ public class WashingController : MonoBehaviour
 {
     public GameObject bubble;
     private GameObject pet;
+    private Animator normalAnimator;
     public GameObject clearUI;
-    CapsuleCollider rangeCollider;
+    BoxCollider rangeCollider;
 
     public Slider washingGauge;
-    private bool isClear;
+    public bool isClear;
 
-    void Start()
+
+    private void OnEnable()
     {
         clearUI.SetActive(false);
         washingGauge.value = 0;
@@ -22,6 +24,10 @@ public class WashingController : MonoBehaviour
 
     void Update()
     {
+        pet = GameObject.FindGameObjectWithTag("Player");
+        normalAnimator = pet.GetComponent<Animator>();
+
+
         // Manage status
         if (washingGauge.value >= 100 && !isClear)
         {
@@ -37,15 +43,18 @@ public class WashingController : MonoBehaviour
             clearUI.SetActive(true);
         }
 
-        // AR
-        DetectHandGestureGrab();
-        DetectMouseClick();
+        if (!isClear)
+        {
+            // AR
+            DetectHandGestureGrab();
+            DetectMouseClick();
+        }
     }
 
     private void FixedUpdate()
     {
-        pet = GameObject.FindGameObjectWithTag("Player");
-        rangeCollider = pet.GetComponent<CapsuleCollider>();
+  
+        rangeCollider = pet.GetComponent<BoxCollider>();
     }
 
     // AR version
@@ -57,8 +66,12 @@ public class WashingController : MonoBehaviour
         // When I perform the Grab Gesture
         if (detectedHand.gesture_info.mano_gesture_trigger == ManoGestureTrigger.GRAB_GESTURE)
         {
+            // Washing animation
+            StartCoroutine("WashingAnimation");
+
             if(washingGauge.value < 100)
                washingGauge.value += 10;
+
             RandomSpawn();
         }
 
@@ -69,15 +82,21 @@ public class WashingController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("washing!!");
+            // Washing animation
+            StartCoroutine("WashingAnimation");
+
             washingGauge.value += 10;
             RandomSpawn();
             Debug.Log("게이지 : " + washingGauge.value);
             Debug.Log("청결 : " + GameManager.Instance.Cleanliness);
+            // Set Idle animation
+            //normalAnimator.SetInteger("animation", 1);
         }
 
     }
 
-    // Bubble spawn
+    // Spawn bubble particle
     private void RandomSpawn()
     {
         Vector3 petPos = pet.transform.position;
@@ -95,5 +114,13 @@ public class WashingController : MonoBehaviour
         Vector3 spawnPos = petPos + randomPos;
 
         Instantiate(bubble, spawnPos, Quaternion.identity);
+    }
+
+    IEnumerator WashingAnimation()
+    {
+        normalAnimator.SetInteger("animation", 7);
+        yield return new WaitForSecondsRealtime(0.5f);
+      
+        normalAnimator.SetInteger("animation", 1);
     }
 }
