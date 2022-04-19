@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
         {
             if ((Cleanliness <= 20 || Fullness <= 20) && Love > 0)
             {
-                yield return new WaitForSeconds(60);
+                yield return new WaitForSeconds(1);
                 if (Love - 5 < 0) Love = 0;
                 else Love -= 5;
             }
