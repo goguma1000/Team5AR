@@ -37,17 +37,15 @@ public class GreetingManager : MonoBehaviour
         //If player swipe hands LEFT or RIGHT 3 times, Greeting is over!
         if(swipeCount == 3)
         {
-            GameManager.Instance.Love += 5;
-            GameManager.Instance.Cleanliness -= 10;
-            GameManager.Instance.Fullness -= 10;
             StartCoroutine("ChangeAnimation");
-            swipeCount = 0;
-            GreetingOver();
         }
     }
 
     private void GreetingOver()
     {
+        GameManager.Instance.Love += 5;
+        GameManager.Instance.Cleanliness -= 10;
+        GameManager.Instance.Fullness -= 10;
         exitWindow.SetActive(true);
     }
 
@@ -59,6 +57,8 @@ public class GreetingManager : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.5f);
         }
         animator.SetInteger("animation", 1);
+        swipeCount = 0;
+        GreetingOver();
     }
 
 } 
