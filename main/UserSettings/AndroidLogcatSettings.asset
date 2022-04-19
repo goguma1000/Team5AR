@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "RFCT20MSRWN",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 11266,
+        "processId": 30968,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -390,6 +390,30 @@
             "deviceId": "RFCT20MSRWN",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 11266,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 27230,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 29401,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 30264,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 30968,
             "exited": false
         },
         {

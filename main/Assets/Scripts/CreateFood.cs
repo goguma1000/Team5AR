@@ -65,10 +65,13 @@ public class CreateFood : MonoBehaviour
     // When walking is end, destroy all food object.
     private void destroyFood()
     {
-        foreach(GameObject go in foodList)
+        if (foodList != null)
         {
-            Destroy(go);
+            foreach (GameObject go in foodList)
+            {
+                Destroy(go);
+            }
+            foodList.Clear();
         }
-        foodList.Clear();
     }
 }
