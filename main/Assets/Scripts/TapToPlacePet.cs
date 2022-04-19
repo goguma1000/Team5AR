@@ -79,7 +79,7 @@ public class TapToPlacePet : MonoBehaviour
         }
     }
     private bool isOverUI(Vector2 position)
-    {
+    {   
         // if the pointer is over a gameobject, it is not over a UI element.
         if (EventSystem.current.IsPointerOverGameObject())
             return false;
