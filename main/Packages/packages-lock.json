@@ -120,15 +120,14 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arfoundation": {
-      "version": "4.1.9",
+      "version": "file:com.unity.xr.arfoundation@4.1.9",
       "depth": 0,
-      "source": "registry",
+      "source": "embedded",
       "dependencies": {
         "com.unity.xr.arsubsystems": "4.1.9",
         "com.unity.xr.management": "4.0.1",
         "com.unity.modules.particlesystem": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
+      }
     },
     "com.unity.xr.arsubsystems": {
       "version": "4.1.9",
