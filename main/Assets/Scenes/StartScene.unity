@@ -477,6 +477,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 294531477177596897, guid: 1a6b57a1e3b54ec4793ee97b79b32b40, type: 3}
+      propertyPath: m_text
+      value: YEO INSU
+      objectReference: {fileID: 0}
+    - target: {fileID: 433490446779892875, guid: 1a6b57a1e3b54ec4793ee97b79b32b40, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1857017931368884517, guid: 1a6b57a1e3b54ec4793ee97b79b32b40, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -657,6 +665,10 @@ PrefabInstance:
       propertyPath: loadingManager
       value: 
       objectReference: {fileID: 8562613554462663620}
+    - target: {fileID: 4794843519449311770, guid: 1a6b57a1e3b54ec4793ee97b79b32b40, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5957431947977845478, guid: 1a6b57a1e3b54ec4793ee97b79b32b40, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -110,6 +110,8 @@ public class WalkingManager : MonoBehaviour
 
     public void GameOver()
     {
+        GameManager.Instance.Timer = 0f;
+
         createFood.walkingEnd();
         pet.GetComponent<PetForWalking>().enabled = false;
         arSO.GetComponent<ARPlaneManager>().enabled = true;
