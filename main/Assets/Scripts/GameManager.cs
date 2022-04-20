@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector]
     public string petName = null;
-   
+
     void Awake()
     {
         if(Instance == null)
