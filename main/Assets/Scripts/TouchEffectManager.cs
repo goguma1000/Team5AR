@@ -44,7 +44,7 @@ public class TouchEffectManager : MonoBehaviour
         Debug.Log("color" + color.a);
         sprite.color = color;
 
-        //if (sprite.color.a <= 0.01f)
-           // Destroy(gameObject);
+        if (sprite.color.a <= 0.01f)
+           Destroy(gameObject);
     }
 }

@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector]
     public string petName = null;
-    
-    private bool isPetspawned = false;
+
     void Awake()
     {
         if(Instance == null)
@@ -39,48 +38,37 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPetspawned == false)
-        {
-            if(GameObject.FindGameObjectWithTag("Player")) isPetspawned = true;
-        }
+        
     }
     IEnumerator decreaseStat()
     {
         while (true)
         {
-            if (isPetspawned)
+            yield return new WaitForSeconds(180);
+            if (Cleanliness - 5 < 0)
             {
-                yield return new WaitForSeconds(180);
-                if (Cleanliness - 5 < 0)
-                {
-                    Cleanliness = 0;
-                }
-                else Cleanliness -= 5;
-
-                if (Fullness - 5 < 0)
-                {
-                    Fullness = 0;
-                }
-                else Fullness -= 5;
+                Cleanliness = 0;
             }
-            yield return null;
+            else Cleanliness -= 5;
+
+            if (Fullness - 5 < 0)
+            {
+                Fullness = 0;
+            }
+            else Fullness -= 5;
         }
     }
     IEnumerator decreaseLove()
     {
         while (true)
         {
-            if (isPetspawned)
+            if ((Cleanliness <= 20 || Fullness <= 20) && Love > 0)
             {
-                if ((Cleanliness <= 20 || Fullness <= 20) && Love > 0)
-                {
-                    yield return new WaitForSeconds(60);
-                    if (Love - 5 < 0) Love = 0;
-                    else Love -= 5;
-                }
-                else yield return null;
+                yield return new WaitForSeconds(1);
+                if (Love - 5 < 0) Love = 0;
+                else Love -= 5;
             }
-            yield return null;
+            else yield return null;
         }
 
     }

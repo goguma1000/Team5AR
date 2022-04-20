@@ -20,10 +20,6 @@ public class WalkingManager : MonoBehaviour
     [SerializeField]
     private GameObject clearWindow;
 
-    //Exit Button UI
-    [SerializeField]
-    private GameObject mainExit;
-
     // Create Food and plane
     private CreateFood createFood;
     [SerializeField]
@@ -70,7 +66,6 @@ public class WalkingManager : MonoBehaviour
 
     public void GameStart()
     {
-        mainExit.SetActive(false);
         pet.GetComponent<PetForWalking>().enabled = true;
         arSO.GetComponent<TapToPlacePet>().enabled = false;
         foreach (var go in arSO.GetComponent<ARPlaneManager>().trackables)
@@ -97,12 +92,24 @@ public class WalkingManager : MonoBehaviour
         GameManager.Instance.Cleanliness -= 20;
         GameManager.Instance.Fullness -= 20;
         GameManager.Instance.Love += 10;
+
+        if(GameManager.Instance.Cleanliness < 0)
+        {
+            GameManager.Instance.Cleanliness = 0;
+        }
+        if (GameManager.Instance.Fullness < 0)
+        {
+            GameManager.Instance.Fullness = 0;
+        }
+        if (GameManager.Instance.Love > 100)
+        {
+            GameManager.Instance.Love = 100;
+        }
         GameOver();
     }
 
     public void GameOver()
     {
-        mainExit.SetActive(true);
         createFood.walkingEnd();
         pet.GetComponent<PetForWalking>().enabled = false;
         arSO.GetComponent<ARPlaneManager>().enabled = true;
