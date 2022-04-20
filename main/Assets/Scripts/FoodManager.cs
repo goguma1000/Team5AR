@@ -77,6 +77,7 @@ public class FoodManager : MonoBehaviour
         target.gameObject.GetComponent<Animator>().SetInteger("animation", 1);
         GameObject.Find("InvantoryCanvas").SetActive(false);
         GameObject.Find("MainGUI").transform.GetChild(1).gameObject.SetActive(true);
+        GameObject.Find("MainGUI").transform.GetChild(0).gameObject.SetActive(true);
         Destroy(this.gameObject);
     }
     

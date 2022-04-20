@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "RFCT20MSRWN",
+    "m_SelectedDeviceId": "R54R801XXWL",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "R54R801XXWL",
+        "name": "com.manomotion.TESTHANDTRACKING",
+        "processId": 544,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -49,6 +49,12 @@
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 4390,
             "exited": true
+        },
+        {
+            "deviceId": "R54R801XXWL",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 544,
+            "exited": false
         }
     ],
     "m_Tags": {
