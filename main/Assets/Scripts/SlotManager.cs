@@ -13,7 +13,7 @@ public class SlotManager : MonoBehaviour
     Notice_UI notice;
     [SerializeField]
     private GameObject interactionBar, foodInventory;
-
+    private GameObject spawned;
     void Start()
     {
         notice = FindObjectOfType<Notice_UI>();
@@ -24,11 +24,13 @@ public class SlotManager : MonoBehaviour
     {
         slotnum = num;
     }
+
+  
     public void instantiatePrefab(GameObject prefab)
     {
         if (GameManager.Instance.isFoodSpawn == false && GameManager.Instance.foodStock[slotnum] != 0 && GameManager.Instance.Fullness < 100)
         {
-            GameObject spawned = Instantiate(prefab, Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Camera.main.nearClipPlane + 0.5f)), Quaternion.identity);
+            spawned = Instantiate(prefab, Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Camera.main.nearClipPlane + 0.5f)), Quaternion.identity);
             spawned.name = prefab.name;
             spawned.tag = "Food";
             GameManager.Instance.isFoodSpawn = true;
@@ -53,6 +55,15 @@ public class SlotManager : MonoBehaviour
             interactionBar.SetActive(true);
         }
 
+    }
+
+    public void backMain()
+    {
+        if (GameManager.Instance.isFoodSpawn)
+        {
+            Destroy(spawned);
+            GameManager.Instance.isFoodSpawn = false;
+        }
     }
     public void InitslotText()
     {
