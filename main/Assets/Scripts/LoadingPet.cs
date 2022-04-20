@@ -13,13 +13,13 @@ public class LoadingPet : MonoBehaviour
         {
             GameObject go = Instantiate(petPrefabs[PlayerPrefs.GetInt("petNum")], transform.position, Quaternion.identity);
             go.transform.parent = transform;
-            go.tag = null;
+            go.tag = "Untagged";
         }
         else 
         {
             GameObject go = Instantiate(petPrefabs[0], transform.position, Quaternion.identity);
             go.transform.parent = transform;
-            go.tag = null;
+            go.tag = "Untagged";
         }
     }
 }
