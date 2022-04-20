@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "LMV500Nf81f1177",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 19521,
+        "processId": 21731,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -534,6 +534,12 @@
             "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 19521,
+            "exited": false
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 21731,
             "exited": false
         }
     ],
