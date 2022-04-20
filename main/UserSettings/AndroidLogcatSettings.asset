@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "RFCT20MSRWN",
     "m_SelectedPackage": {
-        "deviceId": "RFCT20MSRWN",
-        "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 7610,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -16,9 +16,39 @@
         },
         {
             "deviceId": "RFCT20MSRWN",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 7610,
+            "name": "com.sec.android.app.launcher",
+            "processId": 10571,
             "exited": false
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 17627,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 22462,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 26997,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 32142,
+            "exited": true
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 4390,
+            "exited": true
         }
     ],
     "m_Tags": {

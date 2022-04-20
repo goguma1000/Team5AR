@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SaveManager : MonoBehaviour
 {
-    public TMPro.TMP_InputField petNameField;
+    public GameObject petNameField;
     private bool isFirst = true;
 
     void Start()
     {
-        if(!PlayerPrefs.HasKey("petName"))
+        if (!PlayerPrefs.HasKey("petName"))
         {
             isFirst = true;
-            petNameField.gameObject.SetActive(true);
+            petNameField.SetActive(true);
         }
         else
         {
@@ -23,6 +24,7 @@ public class SaveManager : MonoBehaviour
 
     void Update()
     {
+
         if(!isFirst)
         {
             if(GameManager.Instance.petNum != PlayerPrefs.GetInt("petNum") ||
@@ -94,9 +96,9 @@ public class SaveManager : MonoBehaviour
         GameManager.Instance.petName = PlayerPrefs.GetString("petName");
     }
 
-    public void editPetName()
+    public void editPetName(InputField iF)
     {
-        GameManager.Instance.petName = petNameField.text;
+        GameManager.Instance.petName = iF.text;
         Save();
         isFirst = false;
         petNameField.gameObject.SetActive(false);
