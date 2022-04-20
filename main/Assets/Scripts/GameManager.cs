@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public int[] petStomach = { 0, 0, 0, 0, 0, 0, 0 };
     public int petNum = 0;
     public bool isFoodSpawn = false;
-
+    public float Timer = 0.0f;
     [HideInInspector]
     public string petName = null;
 
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
         {
             if ((Cleanliness <= 20 || Fullness <= 20) && Love > 0)
             {
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(60);
                 if (Love - 5 < 0) Love = 0;
                 else Love -= 5;
             }
