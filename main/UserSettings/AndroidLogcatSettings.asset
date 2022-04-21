@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R54R801XXWL",
+    "m_SelectedDeviceId": "LMV500Nf81f1177",
     "m_SelectedPackage": {
-        "deviceId": "R54R801XXWL",
+        "deviceId": "LMV500Nf81f1177",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 544,
+        "processId": 4821,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,6 +12,12 @@
             "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 11777,
+            "exited": false
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 4821,
             "exited": false
         },
         {

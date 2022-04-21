@@ -45,6 +45,8 @@ public class GreetingManager : MonoBehaviour
 
     private void GreetingOver()
     {
+        //GameManager Timer initialize to check status
+        GameManager.Instance.Timer = 0.0f;
         exitWindow.SetActive(true);
     }
 
