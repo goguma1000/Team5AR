@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ActiveEvolution : MonoBehaviour
 {
     public GameObject evoUI;
+    private bool isevo = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +16,14 @@ public class ActiveEvolution : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //먹이 준 횟수 조건에 추가하기
-        if (GameManager.Instance.Love >= 100)
+        int stomachSum = 0;
+
+        for (int i = 0; i < 7; i++)
+        {
+            stomachSum += GameManager.Instance.petStomach[i];
+        }
+
+        if (GameManager.Instance.Love >= 100 && stomachSum >= 10 && GameManager.Instance.petNum == 0)
         {
             evoUI.SetActive(true);
         }
