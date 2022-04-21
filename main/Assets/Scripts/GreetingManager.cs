@@ -37,27 +37,59 @@ public class GreetingManager : MonoBehaviour
         //If player swipe hands LEFT or RIGHT 3 times, Greeting is over!
         if(swipeCount == 3)
         {
+            swipeCount = 0;
+            ChangeStatus();
             StartCoroutine("ChangeAnimation");
         }
     }
 
     private void GreetingOver()
     {
-        GameManager.Instance.Love += 5;
-        GameManager.Instance.Cleanliness -= 10;
-        GameManager.Instance.Fullness -= 10;
+        //GameManager Timer initialize to check status
+        GameManager.Instance.Timer = 0.0f;
         exitWindow.SetActive(true);
+    }
+
+    private void ChangeStatus()
+    {
+        if (GameManager.Instance.Love + 5 >= 100)
+        {
+            GameManager.Instance.Love = 100;
+            Debug.Log("100 애정도 오름 " + GameManager.Instance.Love);
+        }
+        else
+        {
+            GameManager.Instance.Love += 5;
+            Debug.Log("애정도 오름 " + GameManager.Instance.Love);
+        }
+        if (GameManager.Instance.Cleanliness - 10 < 0)
+        {
+            GameManager.Instance.Cleanliness = 0;
+            Debug.Log("0 청결도 내림 " + GameManager.Instance.Cleanliness);
+        }
+        else
+        {
+            GameManager.Instance.Cleanliness -= 10;
+            Debug.Log("청결도 내림 " + GameManager.Instance.Cleanliness);
+        }
+        if (GameManager.Instance.Fullness - 10 < 0)
+        {
+            GameManager.Instance.Fullness = 0;
+            Debug.Log("0 배부름 내림 " + GameManager.Instance.Cleanliness);
+        }
+        else
+        {
+            GameManager.Instance.Fullness -= 10;
+            Debug.Log("0 배부름 내림 " + GameManager.Instance.Cleanliness);
+        }
     }
 
     IEnumerator ChangeAnimation()
     {
-        for (float ft = 1f; ft >= 0; ft -= 0.1f)
-        {
-            animator.SetInteger("animation", 3);
-            yield return new WaitForSecondsRealtime(0.5f);
-        }
+        animator.SetInteger("animation", 3);
+        yield return new WaitForSecondsRealtime(2f);
         animator.SetInteger("animation", 1);
-        swipeCount = 0;
+        yield return new WaitForSecondsRealtime(0.5f);
         GreetingOver();
     }
 

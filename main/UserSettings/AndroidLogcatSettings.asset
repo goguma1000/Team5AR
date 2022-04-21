@@ -1,263 +1,23 @@
 {
-    "m_SelectedDeviceId": "RFCT20MSRWN",
+    "m_SelectedDeviceId": "LMV500Nf81f1177",
     "m_SelectedPackage": {
-        "deviceId": "RFCT20MSRWN",
+        "deviceId": "LMV500Nf81f1177",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 3111,
+        "processId": 4821,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
-            "deviceId": "R54R801XXWL",
+            "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 17821,
-            "exited": true
+            "processId": 11777,
+            "exited": false
         },
         {
-            "deviceId": "R54R801XXWL",
+            "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 22115,
-            "exited": true
-        },
-        {
-            "deviceId": "R54R801XXWL",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 24416,
-            "exited": true
-        },
-        {
-            "deviceId": "R54R801XXWL",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 26409,
-            "exited": true
-        },
-        {
-            "deviceId": "R54R801XXWL",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 29555,
-            "exited": true
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.DefaultCompany.team5",
-            "processId": 13437,
-            "exited": false
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.DefaultCompany.team5",
-            "processId": 14807,
-            "exited": false
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.DefaultCompany.team5",
-            "processId": 15928,
-            "exited": false
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.DefaultCompany.team5",
-            "processId": 20083,
-            "exited": false
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.DefaultCompany.team5",
-            "processId": 20988,
-            "exited": false
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.DefaultCompany.team5",
-            "processId": 21757,
-            "exited": false
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.DefaultCompany.team5",
-            "processId": 22060,
-            "exited": false
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 26701,
-            "exited": false
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 6633,
-            "exited": false
-        },
-        {
-            "deviceId": "R54R3020ESA",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 6986,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 7712,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 9241,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 10315,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 12136,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 13758,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 15066,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 16069,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 18423,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 19158,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 20280,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 20953,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 22537,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 23213,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 25933,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 28295,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 29419,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 31120,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 31948,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 1820,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 2852,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 3951,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 13395,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 17951,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 21560,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 28560,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 31421,
-            "exited": false
-        },
-        {
-            "deviceId": "R3CR20RZ69E",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 4615,
+            "processId": 4821,
             "exited": false
         },
         {
@@ -269,121 +29,37 @@
         {
             "deviceId": "RFCT20MSRWN",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 4598,
+            "processId": 17627,
             "exited": true
         },
         {
             "deviceId": "RFCT20MSRWN",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 7841,
+            "processId": 22462,
             "exited": true
         },
         {
             "deviceId": "RFCT20MSRWN",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 10526,
+            "processId": 26997,
             "exited": true
         },
         {
             "deviceId": "RFCT20MSRWN",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 20561,
+            "processId": 32142,
             "exited": true
         },
         {
             "deviceId": "RFCT20MSRWN",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 23624,
+            "processId": 4390,
             "exited": true
         },
         {
-            "deviceId": "RFCT20MSRWN",
+            "deviceId": "R54R801XXWL",
             "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 27399,
-            "exited": false
-        },
-        {
-            "deviceId": "RFCT20MSRWN",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 31567,
-            "exited": false
-        },
-        {
-            "deviceId": "RFCT20MSRWN",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 3111,
-            "exited": false
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.lge.launcher3",
-            "processId": 3173,
-            "exited": false
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 22070,
-            "exited": true
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 26621,
-            "exited": true
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 27308,
-            "exited": true
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 28174,
-            "exited": true
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 24516,
-            "exited": true
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKINGARCompanion",
-            "processId": 29281,
-            "exited": false
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 30820,
-            "exited": false
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 5543,
-            "exited": false
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 8035,
-            "exited": false
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 10209,
-            "exited": false
-        },
-        {
-            "deviceId": "LMV500Nf81f1177",
-            "name": "com.manomotion.TESTHANDTRACKING",
-            "processId": 11972,
+            "processId": 544,
             "exited": false
         }
     ],
