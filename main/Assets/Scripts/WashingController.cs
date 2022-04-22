@@ -53,7 +53,7 @@ public class WashingController : MonoBehaviour
         {
             // AR
             DetectHandGestureGrab();
-            DetectMouseClick();
+          //  DetectMouseClick();
         }
     }
 
@@ -82,7 +82,7 @@ public class WashingController : MonoBehaviour
 
     }
 
-    
+    /*
     // Click version
     void DetectMouseClick()
     {
@@ -100,7 +100,7 @@ public class WashingController : MonoBehaviour
             //normalAnimator.SetInteger("animation", 1);
         }
 
-    }
+    }*/
 
     // Spawn bubble particle
     private void RandomSpawn()

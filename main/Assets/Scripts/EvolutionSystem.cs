@@ -16,6 +16,9 @@ public class EvolutionSystem : MonoBehaviour
     public GameObject effect_3;
     BoxCollider rangeCollider;
 
+    public AudioSource evoSound1;
+    public AudioSource evoSound2;
+
     [SerializeField]
     private GameObject[] objectToInstantiate;
 
@@ -71,7 +74,8 @@ public class EvolutionSystem : MonoBehaviour
         }
 
         if (count >= 10) 
-        { 
+        {
+            evoSound2.Play();
             CancelInvoke("RandomSpawn");
             animator.SetInteger("animation", 1);
             this.gameObject.SetActive(false);
@@ -80,6 +84,7 @@ public class EvolutionSystem : MonoBehaviour
 
     IEnumerator EvolutionAnimation()
     {
+        
         //Rotation Animation
         for (int i = 0; i < 3; i++)
         {
@@ -98,6 +103,7 @@ public class EvolutionSystem : MonoBehaviour
 
     void SelectType()
     {
+        evoSound1.Play();
         int stomachSum = 0;
 
         for (int i = 0; i < 7; i++)
