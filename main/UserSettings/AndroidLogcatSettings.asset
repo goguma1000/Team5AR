@@ -1,9 +1,15 @@
 {
-    "m_SelectedDeviceId": "RFCT20MSRWN",
+    "m_SelectedDeviceId": "LMV500Nf81f1177",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+<<<<<<< HEAD
+        "deviceId": "LMV500Nf81f1177",
+        "name": "com.manomotion.TESTHANDTRACKING",
+        "processId": 20505,
+=======
+        "deviceId": "RFCT20MSRWN",
+        "name": "com.manomotion.TESTHANDTRACKING",
+        "processId": 8730,
+>>>>>>> 82af2f8a6ef5353c4be894848f916d9b76d354b8
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +24,12 @@
             "deviceId": "LMV500Nf81f1177",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 4821,
+            "exited": false
+        },
+        {
+            "deviceId": "LMV500Nf81f1177",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 20505,
             "exited": false
         },
         {
@@ -55,6 +67,12 @@
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 25427,
             "exited": true
+        },
+        {
+            "deviceId": "RFCT20MSRWN",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 8730,
+            "exited": false
         },
         {
             "deviceId": "R54R801XXWL",
