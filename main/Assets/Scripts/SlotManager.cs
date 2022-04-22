@@ -65,6 +65,7 @@ public class SlotManager : MonoBehaviour
         {
             Destroy(spawned);
             GameManager.Instance.isFoodSpawn = false;
+
         }
     }
     public void InitslotText()

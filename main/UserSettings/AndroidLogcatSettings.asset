@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R3CR20RZ69E",
+    "m_SelectedDeviceId": "R54R801XXWL",
     "m_SelectedPackage": {
-        "deviceId": "R3CR20RZ69E",
+        "deviceId": "R54R801XXWL",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 21273,
+        "processId": 11385,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -42,6 +42,12 @@
             "deviceId": "R3CR20RZ69E",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 21273,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R801XXWL",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 11385,
             "exited": false
         }
     ],
