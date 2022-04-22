@@ -54,11 +54,11 @@ public class FoodManager : MonoBehaviour
 
         GameManager.Instance.petStomach[foodIndex] += 1;
 
-        if (GameManager.Instance.Fullness + 20 > 100)
+        if (GameManager.Instance.Fullness + 50 > 100)
         {
             GameManager.Instance.Fullness = 100;
         }
-        else GameManager.Instance.Fullness += 20;
+        else GameManager.Instance.Fullness += 50;
         
         if (GameManager.Instance.Cleanliness - 10 < 0)
         {
@@ -75,9 +75,9 @@ public class FoodManager : MonoBehaviour
             GameManager.Instance.Love += 10;
         }
         target.gameObject.GetComponent<Animator>().SetInteger("animation", 1);
-        GameObject.Find("InvantoryCanvas").SetActive(false);
+        GameObject.Find("FeedingManager").transform.GetChild(0).gameObject.SetActive(false);
+        GameObject.Find("FeedingManager").transform.GetChild(1).gameObject.SetActive(false);
         GameObject.Find("MainGUI").transform.GetChild(1).gameObject.SetActive(true);
-        GameObject.Find("MainGUI").transform.GetChild(0).gameObject.SetActive(true);
         Destroy(this.gameObject);
     }
     

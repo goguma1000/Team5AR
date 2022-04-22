@@ -21,6 +21,7 @@ public class TapToPlacePet : MonoBehaviour
     private Vector2 touchPosition;
 
     private GameObject spawnedObject;
+    private bool uiOver = false;
 
     void Awake()
     {
@@ -32,9 +33,11 @@ public class TapToPlacePet : MonoBehaviour
     {
         // touch and drag
         if (Input.touchCount > 0)
-        {
-            touchPosition = Input.GetTouch(0).position;
-            return true;
+        {   if(Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                touchPosition = Input.GetTouch(0).position;
+                return true;
+            }
         }
         touchPosition = default;
         return false;

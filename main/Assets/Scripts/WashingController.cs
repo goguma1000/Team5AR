@@ -42,7 +42,7 @@ public class WashingController : MonoBehaviour
 
             Debug.Log("Stop");
 
-            GameManager.Instance.Cleanliness += 20;
+            GameManager.Instance.Cleanliness += 50;
             GameManager.Instance.Love += 5;
             GameManager.Instance.Fullness -= 10;
 

@@ -11,10 +11,12 @@ public class Notice_UI : MonoBehaviour
 
     private WaitForSeconds popDelay = new WaitForSeconds(1.0f);
     private WaitForSeconds fadeDelay = new WaitForSeconds(0.3f);
+    private AudioSource audio;
     
     void Start()
     {
-        subbox.SetActive(false);   
+        subbox.SetActive(false);
+        audio = GetComponent<AudioSource>();
     }
 
     public void SUB(string message)
@@ -27,9 +29,10 @@ public class Notice_UI : MonoBehaviour
     }
 
     IEnumerator SUBDelay()
-    {
+    {   
         subbox.SetActive(true);
         subani.SetBool("isOn", true);
+        audio.Play();
         yield return popDelay;
         subani.SetBool("isOn", false);
         yield return fadeDelay;

@@ -12,7 +12,7 @@ public class SlotManager : MonoBehaviour
     private TextMeshProUGUI[] numtext;
     Notice_UI notice;
     [SerializeField]
-    private GameObject interactionBar, foodInventory, exitBtn;
+    private GameObject interactionBar, foodInventory, backbtn;
     private GameObject spawned;
     void Start()
     {
@@ -46,15 +46,15 @@ public class SlotManager : MonoBehaviour
         {
             notice.SUB("You don't have this food.");
             foodInventory.SetActive(false);
+            backbtn.SetActive(false);
             interactionBar.SetActive(true);
-            exitBtn.SetActive(true);
         }
         else if(GameManager.Instance.Fullness >= 100)
         {
             notice.SUB("The Pet is full ");
             foodInventory.SetActive(false);
+            backbtn.SetActive(false);
             interactionBar.SetActive(true);
-            exitBtn.SetActive(true);
         }
 
     }
