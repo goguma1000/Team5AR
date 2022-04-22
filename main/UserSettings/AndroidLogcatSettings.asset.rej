@@ -1,0 +1,17 @@
+diff a/main/UserSettings/AndroidLogcatSettings.asset b/main/UserSettings/AndroidLogcatSettings.asset	(rejected hunks)
+@@ -1,9 +1,15 @@
+ {
+     "m_SelectedDeviceId": "LMV500Nf81f1177",
+     "m_SelectedPackage": {
++<<<<<<< HEAD
+         "deviceId": "LMV500Nf81f1177",
+         "name": "com.manomotion.TESTHANDTRACKING",
+         "processId": 20505,
++=======
++        "deviceId": "RFCT20MSRWN",
++        "name": "com.manomotion.TESTHANDTRACKING",
++        "processId": 8730,
++>>>>>>> 82af2f8a6ef5353c4be894848f916d9b76d354b8
+         "exited": false
+     },
+     "m_SelectedPriority": 0,
