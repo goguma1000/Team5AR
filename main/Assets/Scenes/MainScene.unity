@@ -7413,6 +7413,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1898271447326234103, guid: 315d1460e44122649b3b4f25625e78f4, type: 3}
+      propertyPath: m_Text
+      value: Clear!
+      objectReference: {fileID: 0}
     - target: {fileID: 2407778522736933765, guid: 315d1460e44122649b3b4f25625e78f4, type: 3}
       propertyPath: m_Name
       value: walkingExit
