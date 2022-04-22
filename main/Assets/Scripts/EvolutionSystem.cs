@@ -28,58 +28,73 @@ public class EvolutionSystem : MonoBehaviour
     Vector3 petPos;
 
     // Start is called before the first frame update
-    void Start()
+
+    private void OnEnable()
     {
         pet = GameObject.FindGameObjectWithTag("Player");
 
         Debug.Log("start");
         ArSection.GetComponent<PetLookAtCamera>().enabled = false;
-       
+
+        isEvo = 0;
+        count = 0;
+        isSelect = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (isEvo == 0)
         {
             evoUI.SetActive(false);
             StartCoroutine("EvolutionAnimation");
         }
-        else if(isEvo == 1)
+        else if (isEvo == 1)
         {
             ArSection.GetComponent<PetLookAtCamera>().enabled = true;
-            StartCoroutine("GreetingAnimation");
+
             InvokeRepeating("RandomSpawn", 0f, 0.2f);
+            animator.SetInteger("animation", 3);
 
             isEvo = 2;
 
+            //Status Reset
             GameManager.Instance.Love = 0;
             GameManager.Instance.Cleanliness = 50;
             GameManager.Instance.Fullness = 50;
+
+            for (int i = 0; i < GameManager.Instance.petStomach.Length; i++)
+            {
+                GameManager.Instance.petStomach[i] = 0;
+            }
         }
 
-        if (count >= 10) CancelInvoke("RandomSpawn");
+        if (count >= 10) 
+        { 
+            CancelInvoke("RandomSpawn");
+            animator.SetInteger("animation", 1);
+            this.gameObject.SetActive(false);
+        }
     }
 
     IEnumerator EvolutionAnimation()
     {
         //Rotation Animation
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 3; i++)
         {
-            Debug.Log("spin!");
             pet.transform.Rotate(0, spinSpeed * 100 * Time.deltaTime * i, 0);
             yield return new WaitForSecondsRealtime(0.6f);
         }
         petPos = pet.transform.position;
 
-        Destroy(pet);
-
         if(!isSelect)
             SelectType();
 
-
         isEvo = 1;
     }
+
+
 
     void SelectType()
     {
@@ -91,6 +106,7 @@ public class EvolutionSystem : MonoBehaviour
         }
 
         int type = Random.Range(0, 5);
+        Debug.Log("type : " + type);
 
         if (GameManager.Instance.petStomach[5] == stomachSum)
         {
@@ -165,14 +181,4 @@ public class EvolutionSystem : MonoBehaviour
         count++;
     }
 
-
-    IEnumerator GreetingAnimation()
-    {
-        for (float ft = 1f; ft >= 0; ft -= 0.2f)
-        {
-            animator.SetInteger("animation", 3);
-            yield return new WaitForSecondsRealtime(0.5f);
-        }
-        animator.SetInteger("animation", 1);
-    }
 }
