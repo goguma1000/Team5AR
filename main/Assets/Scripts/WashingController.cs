@@ -11,6 +11,7 @@ public class WashingController : MonoBehaviour
     public GameObject clearUI;
     public AudioSource bubbleSound;
     BoxCollider rangeCollider;
+    public AudioSource clearSound;
 
     public Slider washingGauge;
     public bool isClear;
@@ -25,6 +26,7 @@ public class WashingController : MonoBehaviour
     private void OnDisable()
     {
         GameManager.Instance.Timer = 0.0f;
+        normalAnimator.SetInteger("animation", 1);
     }
 
     void Update()
@@ -44,7 +46,7 @@ public class WashingController : MonoBehaviour
             GameManager.Instance.Love += 5;
             GameManager.Instance.Fullness -= 10;
 
-            clearUI.SetActive(true);
+            clearSound.Play();
         }
 
         if (!isClear)

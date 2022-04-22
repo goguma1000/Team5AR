@@ -63,6 +63,11 @@ public class EvolutionSystem : MonoBehaviour
             GameManager.Instance.Love = 0;
             GameManager.Instance.Cleanliness = 50;
             GameManager.Instance.Fullness = 50;
+
+            for (int i = 0; i < GameManager.Instance.petStomach.Length; i++)
+            {
+                GameManager.Instance.petStomach[i] = 0;
+            }
         }
 
         if (count >= 10) 
