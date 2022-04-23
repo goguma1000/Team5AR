@@ -78,6 +78,7 @@ public class FoodManager : MonoBehaviour
         GameObject.Find("FeedingManager").transform.GetChild(0).gameObject.SetActive(false);
         GameObject.Find("FeedingManager").transform.GetChild(1).gameObject.SetActive(false);
         GameObject.Find("MainGUI").transform.GetChild(1).gameObject.SetActive(true);
+        GameManager.Instance.Timer = 0.0f;
         Destroy(this.gameObject);
     }
     
