@@ -51,13 +51,13 @@ public class TapToPlacePetForWalking : MonoBehaviour
         {
             if (!isOverUI(touchPosition))
             {
-                raycastAndCreateAndUpdate();
+                raycastAndMoveAndUpdate();
             }
         }
     }
 
-    // instantiate new gameobject based on raycast
-    private void raycastAndCreateAndUpdate()
+    // move pet based on raycast
+    private void raycastAndMoveAndUpdate()
     {
         Ray ray = Camera.main.ScreenPointToRay(touchPosition);
 
