@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R54R801XXWL",
         "name": "com.manomotion.TESTHANDTRACKING",
-        "processId": 11385,
+        "processId": 25312,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,6 +48,12 @@
             "deviceId": "R54R801XXWL",
             "name": "com.manomotion.TESTHANDTRACKING",
             "processId": 11385,
+            "exited": false
+        },
+        {
+            "deviceId": "R54R801XXWL",
+            "name": "com.manomotion.TESTHANDTRACKING",
+            "processId": 25312,
             "exited": false
         }
     ],

@@ -25,7 +25,7 @@ public class FoodManager : MonoBehaviour
         if (target != null)
         {
             distance = Mathf.Abs(Vector3.Distance(target.transform.position, transform.position));
-            if(distance <= 0.7f && gesture.mano_gesture_continuous == ManoGestureContinuous.HOLD_GESTURE)
+            if(distance <= 1.0f && gesture.mano_gesture_continuous == ManoGestureContinuous.HOLD_GESTURE)
             {
                 Ray ray = new Ray(transform.position, target.transform.position - transform.position);
                
